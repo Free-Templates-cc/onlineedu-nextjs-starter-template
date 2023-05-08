@@ -1,11 +1,22 @@
 import React from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 type Props = {}
 
 const Slider = (props: Props) => {
   return (
     <div className="slider-area ">
-            <div className="slider-active">
+
+            <Carousel 
+            infiniteLoop={true}
+            showThumbs={false}
+            showIndicators={false}
+            showArrows={false}
+            showStatus={false}
+            swipeable={true}
+            className="slider-active"
+            >
               <div className="single-slider slider-height d-flex align-items-center">
                 <div className="container">
                   <div className="row align-items-center">
@@ -79,7 +90,8 @@ const Slider = (props: Props) => {
                   </div>
                 </div>
               </div>
-            </div>
+              </Carousel>
+         
           </div>
   )
 }

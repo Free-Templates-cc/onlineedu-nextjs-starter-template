@@ -971,7 +971,6 @@ li {
 
 .slider-height {
   background-image: url(/images/hero/h1_hero.png.webp);
-  min-height: 840px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover
@@ -1026,7 +1025,8 @@ li {
 }
 
 .slider-area .hero__caption {
-  overflow: hidden
+  overflow: hidden;
+  text-align: left;
 }
 
 .slider-area .hero__caption span {

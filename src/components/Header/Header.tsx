@@ -1,12 +1,24 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { faFacebookF, faGooglePlusG, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLock, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
+import useVerticalScrollEvent from "@/hooks/useVerticalScrollEvent";
 
 type Props = {}
 
 const Header = (props: Props) => {
+
+  const stickyRef = useRef<HTMLDivElement>(null);
+
+  useVerticalScrollEvent((evt:any) => {
+    if(evt.currentTarget.scrollY >= 60) {
+      (stickyRef.current as HTMLDivElement).classList.add('sticky-bar');
+      return;
+    } 
+    (stickyRef.current as HTMLDivElement).classList.remove('sticky-bar');
+  });
+
   return (
     <header>
     <div className="header-area">
@@ -70,7 +82,7 @@ const Header = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="header-bottom header-sticky">
+        <div className="header-bottom header-sticky" ref={stickyRef}>
           <div className="logo d-none d-lg-block">
             <a href="index.html">
               <img src="/images/logo/logo.png.webp" alt="" />

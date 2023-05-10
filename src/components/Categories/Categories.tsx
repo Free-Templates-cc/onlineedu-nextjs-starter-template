@@ -14,7 +14,7 @@ const Categories = (props: Props) => {
           <div className="cl-xl-7 col-lg-8 col-md-10">
             <div className="section-tittle text-center mb-70">
               <span>Popular Online Courses</span>
-              <h2>Lets Brows All Catagori</h2>
+              <h2>Lets Browse All Categories</h2>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Categories = (props: Props) => {
         <div className="row">
           <div className="col-lg-12">
             <div className="browse-btn2 text-center mt-50">
-              <a href="courses.html" className="btn">
+              <a href="https://preview.colorlib.com/theme/onlineedu/courses.html" className="btn hover-text-white">
                 Find More Courses
               </a>
             </div>

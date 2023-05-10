@@ -1,4 +1,5 @@
 import React from 'react'
+import TeamMate from './TeamMate'
 
 type Props = {}
 
@@ -6,7 +7,6 @@ const Team = (props: Props) => {
   return (
     <div
     className="team-area pt-160 pb-160 section-bg"
-    data-background="/images/gallery/section_bg02.png.webp"
   >
     <div className="container">
       <div className="row justify-content-center">
@@ -18,136 +18,16 @@ const Team = (props: Props) => {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-3 col-md-6 col-sm-6">
-          <div className="single-team mb-30">
-            <div className="team-img">
-              <img src="/images/gallery/team1.png.webp" alt="" />
-
-              <ul className="team-social">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fas fa-globe"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="team-caption">
-              <h3>
-                <a href="instructor.html">Alexa Janathon</a>
-              </h3>
-              <p>Faculty</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-6">
-          <div className="single-team mb-30">
-            <div className="team-img">
-              <img src="/images/gallery/team2.png.webp" alt="" />
-
-              <ul className="team-social">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fas fa-globe"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="team-caption">
-              <h3>
-                <a href="instructor.html">Janathon Smith</a>
-              </h3>
-              <p>Faculty</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-6">
-          <div className="single-team mb-30">
-            <div className="team-img">
-              <img src="/images/gallery/team3.png.webp" alt="" />
-
-              <ul className="team-social">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fas fa-globe"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="team-caption">
-              <h3>
-                <a href="instructor.html">Alexa MacCalum</a>
-              </h3>
-              <p>Faculty</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-6">
-          <div className="single-team mb-30">
-            <div className="team-img">
-              <img src="/images/gallery/team4.png.webp" alt="" />
-
-              <ul className="team-social">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fas fa-globe"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="team-caption">
-              <h3>
-                <a href="instructor.html">Alexa j Watson</a>
-              </h3>
-              <p>Faculty</p>
-            </div>
-          </div>
-        </div>
+        <TeamMate image="/images/gallery/team1.png.webp" name="Alexa Janathon" />
+        <TeamMate image="/images/gallery/team2.png.webp" name="Janathon Smith" />
+        <TeamMate image="/images/gallery/team3.png.webp" name="Alexa MacCalum" />
+        <TeamMate image="/images/gallery/team4.png.webp" name="Alexa j Watson" />
       </div>
 
       <div className="row">
         <div className="col-lg-12">
           <div className="browse-btn2 text-center mt-70">
-            <a href="instructor.html" className="btn white-btn">
+            <a href="https://preview.colorlib.com/theme/onlineedu/instructor.html" className="btn white-btn hover-text-white">
               View All Faculty
             </a>
           </div>

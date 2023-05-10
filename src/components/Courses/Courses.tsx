@@ -1,4 +1,7 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import CourseItem from './CourseItem'
 
 type Props = {}
 
@@ -15,123 +18,15 @@ const Courses = (props: Props) => {
         </div>
       </div>
       <div className="row">
-        <div className="col-xl-4 col-lg-4 col-md-6">
-          <div className="single-course mb-40">
-            <div className="course-img">
-              <img src="/images/gallery/popular_sub1.png.webp" alt="" />
-            </div>
-            <div className="course-caption">
-              <div className="course-cap-top">
-                <h4>
-                  <a href="#">Graphic Design</a>
-                </h4>
-              </div>
-              <div className="course-cap-mid d-flex justify-content-between">
-                <div className="course-ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                </div>
-                <ul>
-                  <li>52 Review</li>
-                </ul>
-              </div>
-              <div className="course-cap-bottom d-flex justify-content-between">
-                <ul>
-                  <li>
-                    <i className="ti-user"></i> 562
-                  </li>
-                  <li>
-                    <i className="ti-heart"></i> 562
-                  </li>
-                </ul>
-                <span>Free</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl-4 col-lg-4 col-md-6">
-          <div className="single-course mb-40">
-            <div className="course-img">
-              <img src="/images/gallery/popular_sub2.png.webp" alt="" />
-            </div>
-            <div className="course-caption">
-              <div className="course-cap-top">
-                <h4>
-                  <a href="#">Web Development</a>
-                </h4>
-              </div>
-              <div className="course-cap-mid d-flex justify-content-between">
-                <div className="course-ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                </div>
-                <ul>
-                  <li>52 Review</li>
-                </ul>
-              </div>
-              <div className="course-cap-bottom d-flex justify-content-between">
-                <ul>
-                  <li>
-                    <i className="ti-user"></i> 562
-                  </li>
-                  <li>
-                    <i className="ti-heart"></i> 562
-                  </li>
-                </ul>
-                <span>Free</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl-4 col-lg-4 col-md-6">
-          <div className="single-course mb-40">
-            <div className="course-img">
-              <img src="/images/gallery/popular_sub3.png.webp" alt="" />
-            </div>
-            <div className="course-caption">
-              <div className="course-cap-top">
-                <h4>
-                  <a href="#">Digital Marketing</a>
-                </h4>
-              </div>
-              <div className="course-cap-mid d-flex justify-content-between">
-                <div className="course-ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                </div>
-                <ul>
-                  <li>52 Review</li>
-                </ul>
-              </div>
-              <div className="course-cap-bottom d-flex justify-content-between">
-                <ul>
-                  <li>
-                    <i className="ti-user"></i> 562
-                  </li>
-                  <li>
-                    <i className="ti-heart"></i> 562
-                  </li>
-                </ul>
-                <span>Free</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CourseItem image="/images/gallery/popular_sub1.png.webp" title={`Graphic Design`} />
+        <CourseItem image="/images/gallery/popular_sub2.png.webp" title={`Web Development`} />
+        <CourseItem image="/images/gallery/popular_sub3.png.webp" title={`Digital Marketing`} />
       </div>
 
       <div className="row">
         <div className="col-lg-12">
           <div className="browse-btn2 text-center mt-50">
-            <a href="courses.html" className="btn">
+            <a href="https://preview.colorlib.com/theme/onlineedu/courses.html" className="btn hover-text-white">
               Find More Courses
             </a>
           </div>

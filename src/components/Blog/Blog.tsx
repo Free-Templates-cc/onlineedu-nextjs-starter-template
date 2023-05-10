@@ -1,4 +1,5 @@
 import React from 'react'
+import BlogItem from './BlogItem'
 
 type Props = {}
 
@@ -15,56 +16,9 @@ const Blog = (props: Props) => {
                 </div>
               </div>
               <div className="row">
-                <div className="col-xl-6 col-lg-6 col-md-6">
-                  <div className="home-blog-single mb-30">
-                    <div className="blog-img-cap">
-                      <div className="blog-img">
-                        <img src="/images/gallery/home-blog1.png.webp" alt="" />
+                <BlogItem image="/images/gallery/home-blog1.png.webp" title="Footprints in Time is perfect House in Kurashiki" />
+                <BlogItem image="/images/gallery/home-blog2.png.webp" title="Footprints in Time is perfect House in Kurashiki" />
 
-                        <div className="blog-date text-center">
-                          <span>24</span>
-                          <p>Now</p>
-                        </div>
-                      </div>
-                      <div className="blog-cap">
-                        <p>| Properties</p>
-                        <h3>
-                          <a href="blog_details.html">
-                            Footprints in Time is perfect House in Kurashiki
-                          </a>
-                        </h3>
-                        <a href="blog_details.html" className="more-btn">
-                          Read more »
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-6 col-lg-6 col-md-6">
-                  <div className="home-blog-single mb-30">
-                    <div className="blog-img-cap">
-                      <div className="blog-img">
-                        <img src="/images/gallery/home-blog2.png.webp" alt="" />
-
-                        <div className="blog-date text-center">
-                          <span>24</span>
-                          <p>Now</p>
-                        </div>
-                      </div>
-                      <div className="blog-cap">
-                        <p>| Properties</p>
-                        <h3>
-                          <a href="blog_details.html">
-                            Footprints in Time is perfect House in Kurashiki
-                          </a>
-                        </h3>
-                        <a href="blog_details.html" className="more-btn">
-                          Read more »
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

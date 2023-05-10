@@ -4,6 +4,7 @@ import { faFacebookF, faGooglePlusG, faLinkedinIn, faTwitter } from '@fortawesom
 import { faLock, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import useVerticalScrollEvent from "@/hooks/useVerticalScrollEvent";
+import Link from 'next/link'
 
 type Props = {}
 
@@ -84,49 +85,49 @@ const Header = (props: Props) => {
         </div>
         <div className="header-bottom header-sticky" ref={stickyRef}>
           <div className="logo d-none d-lg-block">
-            <a href="index.html">
+            <Link href="/">
               <img src="/images/logo/logo.png.webp" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="container">
             <div className="menu-wrapper">
               <div className="logo logo2 d-block d-lg-none">
-                <a href="index.html">
+              <Link href="/">
                   <img src="/images/logo/logo.png.webp" alt="" />
-                </a>
+                </Link>
               </div>
 
               <div className="main-menu d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
                     <li>
-                      <a href="index.html">Home</a>
+                    <Link href="/">Home</Link>
                     </li>
                     <li>
-                      <a href="about.html">About</a>
+                      <a href="https://preview.colorlib.com/theme/onlineedu/about.html">About</a>
                     </li>
                     <li>
-                      <a href="courses.html">Courses</a>
+                      <a href="https://preview.colorlib.com/theme/onlineedu/courses.html">Courses</a>
                     </li>
                     <li>
-                      <a href="instructor.html">Instructors</a>
+                      <a href="https://preview.colorlib.com/theme/onlineedu/instructor.html">Instructors</a>
                     </li>
                     <li>
-                      <a href="blog.html">Blog</a>
+                      <a href="https://preview.colorlib.com/theme/onlineedu/blog.html">Blog</a>
                       <ul className="submenu">
                         <li>
-                          <a href="blog.html">Blog</a>
+                          <a href="https://preview.colorlib.com/theme/onlineedu/blog.html">Blog</a>
                         </li>
                         <li>
-                          <a href="blog_details.html">Blog Details</a>
+                          <a href="https://preview.colorlib.com/theme/onlineedu/blog_details.html">Blog Details</a>
                         </li>
                         <li>
-                          <a href="elements.html">Element</a>
+                          <a href="https://preview.colorlib.com/theme/onlineedu/elements.html">Element</a>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="https://preview.colorlib.com/theme/onlineedu/contact.html">Contact</a>
                     </li>
                   </ul>
                 </nav>

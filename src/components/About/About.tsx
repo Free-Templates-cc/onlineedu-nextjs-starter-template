@@ -36,7 +36,7 @@ const About = (props: Props) => {
                         Randomised words whi
                       </li>
                     </ul>
-                    <a href="about.html" className="btn">
+                    <a href="https://preview.colorlib.com/theme/onlineedu/about.html" className="btn hover-text-white">
                       More About Us
                     </a>
                   </div>

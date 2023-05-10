@@ -225,7 +225,8 @@ li {
   border-radius: 50%;
   line-height: 48px;
   border: 2px solid transparent;
-  box-shadow: 0 0 10px 3px rgba(108,98,98,0.2)
+  box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+  z-index: 999;
 }
 
 @media (max-width: 575px) {
@@ -237,6 +238,10 @@ li {
 #back-top a i {
   display: block;
   line-height: 50px
+}
+#back-top a svg {
+  height: 21px;
+  margin-bottom: 5px;
 }
 
 .sticky-bar {
@@ -1562,14 +1567,22 @@ li {
   color: #2d3092
 }
 
-.popular-course .single-course .course-caption .course-cap-mid .course-ratting,.all-course .single-course .course-caption .course-cap-mid .course-ratting {
+.popular-course .single-course .course-caption .course-cap-mid .course-ratting,
+.all-course .single-course .course-caption .course-cap-mid .course-ratting {
   margin-bottom: 14px
 }
 
-.popular-course .single-course .course-caption .course-cap-mid .course-ratting i,.all-course .single-course .course-caption .course-cap-mid .course-ratting i {
+.popular-course .single-course .course-caption .course-cap-mid .course-ratting i,
+.all-course .single-course .course-caption .course-cap-mid .course-ratting i {
   color: #FBBA42;
   display: inline-block;
   font-size: 12px
+}
+.popular-course .single-course .course-caption .course-cap-mid .course-ratting svg {
+  height: 13px;
+  color: #FBBA42;
+  display: inline-block;
+  margin: 0 1px;
 }
 
 .popular-course .single-course .course-caption .course-cap-mid ul li,.all-course .single-course .course-caption .course-cap-mid ul li {
@@ -1606,6 +1619,10 @@ li {
 
 .popular-course .single-course .course-caption .course-cap-bottom span img,.all-course .single-course .course-caption .course-cap-bottom span img {
   margin-right: 5px
+}
+
+.team-area, .testimonial-area {
+  background-color: #2F2E95;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1722,6 +1739,11 @@ li {
   display: inline-block
 }
 
+.team-social li a svg {
+  display: inline-block;
+  height: 14px;
+}
+
 .team-social li:nth-child(1) a {
   transition-delay: 0.0s
 }
@@ -1795,6 +1817,13 @@ li {
 .testimonial-area .testimonial-ratting i {
   color: #FBBA42;
   display: inline-block
+}
+
+.testimonial-area .testimonial-ratting svg {
+  height: 13px;
+  color: #FBBA42;
+  display: inline-block;
+  margin: 0 1px;
 }
 
 .testimonial-area .rattiong-caption span {
@@ -1888,7 +1917,8 @@ li {
   display: block;
   left: 0;
   right: 0;
-  margin: 0 auto
+  margin: 0 auto;
+  max-width: 120px;
 }
 
 .h1-testimonial-active .testimonial-icon img {
@@ -2020,6 +2050,13 @@ li {
   color: #2d3092
 }
 
+.footer-area .footer-bottom .footer-copy-right p svg {
+  color: #2d3092;
+  height: 16px;
+  display: inline-block;
+  margin: 0 3px;
+}
+
 .footer-area .footer-bottom .footer-copy-right p a {
   color: #2d3092
 }
@@ -2079,6 +2116,12 @@ li {
   transition: 0.2s linear
 }
 
+.footer-social a svg {
+  height: 20px;
+  transition: 0.2s linear;
+  margin-bottom: 10px;
+}
+
 .footer-social a::before {
   content: "";
   position: absolute;
@@ -2091,6 +2134,11 @@ li {
 }
 
 .footer-social a:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1
+}
+
+.footer-social a:hover svg {
   transform: scale(1.3);
   color: #f1f1f1
 }
@@ -4285,4 +4333,8 @@ b,sup,sub,u,del {
 
 .switch-wrap {
   margin-bottom: 10px
+}
+
+.btn.hover-text-white:hover {
+  color:white;
 }
